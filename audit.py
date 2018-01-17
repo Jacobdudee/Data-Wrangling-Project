@@ -65,6 +65,12 @@ def audit(osmfile):
     osm_file.close()
     return street_types
 
+def update_zip(name):
+    if name == "90602:90605":
+        name = "Unknown"
+        return name
+    else:
+        return name
 
 def update_name(name, mapping):
     # YOUR CODE HERE
