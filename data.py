@@ -210,7 +210,7 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
             elif re.match(LOWER_COLON, child.attrib['k']):
                 node_tags['id'] = element.attrib['id']
                 node_tags['key'] = child.attrib['k'].split(':',1)[1]
-                node_tags['value'] = child.attrib['v']
+                node_tags['value'] = update_name(child.attrib['v'],mapping)
                 node_tags['type'] = child.attrib['k'].split(':',1)[0]
                 tags.append(node_tags)
             else:
@@ -236,7 +236,7 @@ def shape_element(element, node_attr_fields=NODE_FIELDS, way_attr_fields=WAY_FIE
                 elif re.match(LOWER_COLON, child.attrib['k']):
                     way_tags['id'] = element.attrib['id']
                     way_tags['key'] = child.attrib['k'].split(':',1)[1]
-                    way_tags['value'] = child.attrib['v']
+                    way_tags['value'] = update_name(child.attrib['v'],mapping)
                     way_tags['type'] = child.attrib['k'].split(':',1)[0]
                     tags.append(way_tags)
                 else:
