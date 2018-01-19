@@ -10,3 +10,7 @@ There are 2 main Jupyter notebooks for this project:
 2. OSM Time Series Analysis in Python: I analyzed contributions over time to this area using Pandas/Matplotlib
 
 This repo also includes the Python scripts I used to wrangle the extracted XML data into a format suitable for analysis. 
+
+Resources:
+https://mapzen.com/
+https://www.openstreetmap.org/
