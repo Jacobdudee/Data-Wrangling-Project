@@ -1,6 +1,8 @@
 # Data-Wrangling-Project
 This project was completed as part of my Udacity Data Analyst Nanodegree. I cleaned Open Street Map XML data using Python, then loaded clean datasets into a SQLite database.
 
+Data was obtained via MapZen, an Open Street Map API that allowed me to extract data in XML format from a custom square of lat/long points. I put the points around Whittier, CA, my hometown.
+
 There are 2 notebooks for this project:
 
 1. Project Notebook: contains sql queries from cleaned data and includes dicussion
